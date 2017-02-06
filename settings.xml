@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<settings
+	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings- 1.0.0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/SETTINGS/1.0.0">
+	<profiles>
+		<profile>
+			<id>wmpdev</id>
+			<repositories>
+				<!-- 
+				//Enabel for legacy reporsitory
+				<repository>
+					<id>lib</id>
+					<name>lib</name>
+					<releases>
+						<enabled>true</enabled>
+						<checksumPolicy>ignore</checksumPolicy>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+					<url>file://${project.basedir}/../parent/lib</url>
+				</repository>
+				 -->
+				<repository>
+					<id>repo-1</id>
+					<name>Maven Java Net Snapshots and Releases</name>
+					<url>https://maven.java.net/content/groups/public/</url>
+				</repository>
+				<!--
+				<repository>
+					<id>repo-2</id>
+					<name>Ibilblo </name>
+					<url>http://mirrors.ibiblio.org/maven2/</url>
+				</repository> 
+				-->
+				<repository>
+					<id>repo-3</id>
+					<name>mvnrepo</name>
+					<url>http://mvnrepository.com/</url>
+				</repository>
+				<repository>
+					<id>JBoss repository</id>
+					<url>http://repository.jboss.org/nexus/content/groups/public/</url>
+				</repository>
+				<repository>
+					<id>repo-4</id>
+					<name>Central Repository</name>
+					<url>http://repo.maven.apache.org/maven2</url>
+				</repository>
+				<repository>
+					<id>repo-5</id>
+					<name>Central Repository</name>
+					<url>http://mavenhub.com/mvn/central/</url>
+				</repository>
+				<repository>
+					<id>io.spring.repo.maven.release</id>
+					<url>http://repo.spring.io/release/</url>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</repository>
+				<repository>
+					<id>io.spring.repo.maven.milestone</id>
+					<url>http://repo.spring.io/milestone/</url>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
+	<activeProfiles>
+		<activeProfile>wmpdev</activeProfile>
+	</activeProfiles>
+	<pluginGroups>
+		<pluginGroup>com.puls</pluginGroup>
+	</pluginGroups>
+
+</settings>
